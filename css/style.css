@@ -1,0 +1,48 @@
+body {
+    background-color: #5f5f5f !important;
+}
+
+.container {
+  width: 100%;
+}
+
+html {
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+  }
+
+  .container{
+    width: 700px;
+  }
+
+  /* Button Scroll to top*/
+#btnScrollToTop {
+    z-index: 1;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: hsl(168deg, 73%, 41%);
+    box-shadow: 0 0 10px #131517;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  #btnScrollToTop:active {
+    background: hsl(168deg, 73%, 41%);
+  }
+  
+  /* Barra Scroll vertical*/
+  body::-webkit-scrollbar {
+    width: 15px;
+    height: 10px;
+    background-color: hsl(168deg, 100%, 15%);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: hsl(168deg, 73%, 41%);
+  }
